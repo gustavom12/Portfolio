@@ -1,11 +1,9 @@
 import React from "react";
 import Carrousel from "../carrouselImgs/carrousel";
 function Vinteo({ inSpanish }: { inSpanish: boolean }) {
-  //https://i.ibb.co/chhCynk/vint2.png
   return (
     <div className="proyect d-flex" data-aos="fade">
       <div className="cardImage mx-auto">
-        {/* <img src="https://i.ibb.co/dB5L3t5/vint.png" alt="" /> */}
         <Carrousel
           imagesUrls={[
             "https://i.ibb.co/dB5L3t5/vint.png",
