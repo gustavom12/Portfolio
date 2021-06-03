@@ -1,0 +1,69 @@
+@import ../../variables
+.proyects
+  padding: 0 40px
+  .proyectsTitle
+    margin-bottom: 30px
+  .proyect
+    margin-bottom: 90px
+    .cardImage
+      width: 48%
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        border-radius: 10px
+        border: 2px solid $main
+        width: 100%
+
+    .text
+      width: 48%
+      padding: 0 20px
+      .logo
+        font-size: 50px
+      .logoimg
+        height: 50px
+      // .fa-angular::after
+      //   height: 30px
+      //   background: #fff
+      //   border-radius: 50%
+      //   width: 30px
+      //   position: absolute
+      //   // top: 100px
+      //   left: 0
+          // position: absolute
+          // top: 0
+
+@media (min-width: 1050px)
+  .proyects
+    padding: 0 7%
+
+@media (max-width:900px)
+  .proyects
+    .proyectsTitle
+      text-align: center
+      font-size: 40px
+      margin-bottom: 60px
+    .proyect
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .cardImage
+        width: 100%
+        margin-bottom: 25px
+      .text
+        width: 100%
+@media (max-width: 550px)
+  .proyects
+    padding: 0 10px
+    .proyectsTitle
+      font-size: 40px
+    .proyect
+      .text
+        padding: 0 5px
+@media (max-width: 450px)
+  .proyects
+    .proyectsTitle
+      font-size: 34px
+    .proyect
+      h4
+        font-size: 20px

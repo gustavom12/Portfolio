@@ -1,0 +1,53 @@
+@import ../../variables
+nav.sticky
+  position: fixed
+  top: 0
+  height: 56px
+  border-top: none
+  z-index: 999
+  margin: 0
+.outsideScreen
+  left: -300px
+  transition: all 0.5s ease-in-out
+nav
+  position: absolute
+  background: $hiperDark
+  color: #fff
+  bottom: 0
+  padding: 7px 30px
+  border-top: 2px solid $main
+  border-bottom: 2px solid $main
+  align-items: center
+  margin-top: 20px
+  h2
+    transition: all 0.5s ease-in
+    position: relative
+    display: inline
+    left: 0
+  .theme
+    transition: color ease-in-out 0.4s
+  .language
+    transition: color ease-in-out 0.4s
+    position: relative
+    margin-right: 30px
+    .onHoverLanguage
+      position: absolute
+      top: -50px
+      background: $darkmain
+    &:hover
+      transition: color ease-in-out 0.4s
+      color: $main
+  .theme:hover
+    transition: color ease-in-out 0.4s
+    color: $main
+  .theme.fa-sun:hover
+    transition: color ease-in-out 0.4s
+    color: #fffb00
+
+@media (max-width: 500px)
+  nav
+    padding: 7px 15px
+    .language
+      font-size: 17px !important
+    h2
+      font-size: 22px
