@@ -23,7 +23,7 @@ function Axis({ inSpanish }: { inSpanish: boolean }) {
       </div>
       <div className="text mx-auto">
         <a
-          href="https://axis-eta.vercel.app/home"
+          href="https://axis-eta.vercel.app"
           className="fs-2 text-center text-main fw-bold"
           target="_blank"
           rel="noreferrer"

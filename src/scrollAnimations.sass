@@ -5,8 +5,25 @@
   &.aos-animate
     opacity: 1
 
-@media screen and (min-width: 768px)
-  transform: translateX(100px)
+[data-aos="flip-left-shake"]
+  backface-visibility: hidden
+  transition-property: transform
 
   &.aos-animate
-    transform: translateX(0)
+    animation: flip-shake 2s linear
+    transform: perspective(2500px) rotateY(0)
+    animation-fill-mode: forwards
+
+@keyframes flip-shake
+  0%
+    transform: rotateY( 180deg )
+  40%
+    transform: perspective(2500px) rotateY(0)
+  55%
+    transform: rotateY( -30deg )
+  70%
+    transform: rotateY( 20deg )
+  85%
+    transform: rotateY( -10deg )
+  100%
+    transform: perspective(2500px) rotateY(0)

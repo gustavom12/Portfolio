@@ -1,0 +1,21 @@
+.message
+  position: fixed
+  left: 0
+  bottom: 5vh
+  visibility: none
+  z-index: 10
+  opacity: 0
+  transition: all linear 0.3s
+  // display: none
+  width: 50%
+.animate
+  left: 25%
+  opacity: 1
+  visibility: visible
+  color: #fff
+  background: #036168e1
+@media (max-width: 600px)
+  .message
+    width: 80%
+  .animate
+    left: 10%

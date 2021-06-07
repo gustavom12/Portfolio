@@ -20,9 +20,9 @@ function Carrousel ({imagesUrls, delay}:{imagesUrls:Array<string>,delay?:number}
         width:"100%"
       }}
     >
-      {imagesUrls.map((url)=>
+      {imagesUrls.map((url, i)=>
         <SwiperSlide >
-          <img src={url} key={url} alt="" />
+          <img src={url} key={i} alt="" />
         </SwiperSlide >
       )}
     </Swiper>

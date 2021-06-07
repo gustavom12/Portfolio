@@ -7,7 +7,7 @@ function About({ inSpanish }: { inSpanish: boolean }) {
         {inSpanish ? "Trasfondo" : "Details"}
       </h4>
       <div className="d-flex">
-        <div className="avatarContainer" data-aos="flip-left" >
+        <div className="avatarContainer" data-aos="flip-left-shake" data-aos-delay="0" data-aos-time="0" >
           <img
             src="https://i.ibb.co/bBVXMSM/about.jpg"
             className="avatar"
@@ -28,7 +28,9 @@ function About({ inSpanish }: { inSpanish: boolean }) {
             con otros programadores.
             <div />
             Mi objetivo como desarrollador es perfeccionar las{" "}
-            <span className="text-main cursor-pointer">
+            <span className="text-main cursor-pointer" onClick={()=>{
+              document.getElementById("Skills")?.scrollIntoView(false)
+            }} >
               tecnologías ya aprendidas
             </span>
             , aunque, en menor medida, también disfruto de aprender tecnologías

@@ -8,15 +8,17 @@ import Skills from '../skills/skills';
 import './App.sass';
 import * as AOS from "aos"
 import "aos/dist/aos.css";
+import ContactMe from '../contactMe/contactMe';
 function App() {
   const [inSpanish, setInSpanish] = useState(true)
   const [theme, setTheme] = useState("dark")
   useEffect(()=>{
     //delete loader after DOM loaded
     document.getElementById("loader")?.remove()
+
     AOS.init({
-      duration: 700, // values from 0 to 3000, with step 50ms
-      easing: 'ease-out', // default easing for AOS animations
+      duration: 600, // values from 0 to 3000, with step 50ms
+      easing: 'ease-in-out', // default easing for AOS animations
       once: true,
       offset: 50,
       anchorPlacement: 'bottom-bottom'
@@ -38,6 +40,7 @@ function App() {
       <Skills inSpanish={inSpanish} />
       <Proyects inSpanish={inSpanish}/>
       <Footer/>
+      <ContactMe inSpanish={inSpanish}/>
     </div>
   );
 }

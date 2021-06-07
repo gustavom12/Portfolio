@@ -1,0 +1,54 @@
+@import ../../../variables
+.errorInput
+  border-color: #f73838 !important
+  color: #fc5c5c !important
+  transition: all linear 0.3s
+.errorColor
+  color: #ff0000 !important
+  transition: color 0.3s linear
+.animatedInput
+  position: relative
+  label
+    position: absolute
+    top: -3px
+    cursor: text
+    font-size: 20px
+    margin: 10px
+    padding: 0 10px
+    color: #049ba0
+    background: $hiperDark
+    -webkit-transition: all .2s ease-in-out, font-size .2s ease-in-out
+    transition: all .2s ease-in-out, font-size .2s ease-in-out
+    &.active
+      top: -18px
+      font-size: 16px
+      font-weight: 600
+      // letter-spacing: 3px
+      color: $main
+  input[type=text], textarea
+    width: 100%
+    padding: 20px
+    border: 3px solid #02696d
+    font-size: 20px
+    font-weight: 500
+    background-color: #00000000
+    color: white
+    background: #00000000
+    border-radius: 5px
+    height: 40px
+    transition: border-color .3s linear
+    &.huge
+      height: 180px
+    &::-webkit-scrollbar
+      display: none
+
+    &::-webkit-scrollbar-track
+      display: none
+
+    &::-webkit-scrollbar-thumb
+      display: none
+    &:focus
+      outline: none
+      border-color: $main
+      transition: border-color .3s linear
+
