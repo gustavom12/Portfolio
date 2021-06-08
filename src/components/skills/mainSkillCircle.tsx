@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 
 function MainSkillCircle({
   percent,
-  children
+  children,
+  delay
 }: {
   percent: number;
   children?:any
+  delay?:any
 }) {
   const skillDiv: any = useRef();
   const progressValue: any = useRef();
@@ -69,6 +71,8 @@ function MainSkillCircle({
     <div
       ref={skillDiv}
       className="mainSkill inline-flex flex-column"
+      data-aos="fade-up"
+      data-aos-delay={delay}
     >
       <div className="text-center mx-auto">
         {children}

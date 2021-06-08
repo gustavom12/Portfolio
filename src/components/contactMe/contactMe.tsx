@@ -38,7 +38,7 @@ function ContactMe({ inSpanish }: { inSpanish: boolean }) {
       setTimeout(() => {
         setSuccessMessage("");
       }, 5200);
-      const data = await fetch("https://emailersender.herokuapp.com/emailer", {
+      await fetch("https://emailersender.herokuapp.com/emailer", {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -46,7 +46,6 @@ function ContactMe({ inSpanish }: { inSpanish: boolean }) {
         method: "POST",
         body,
       });
-      console.log( await data.json())
     } catch (error) {
       console.log({ error });
     }

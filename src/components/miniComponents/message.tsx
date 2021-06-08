@@ -18,7 +18,7 @@ function Message({ message }: { message: String }) {
     }
   }, [message]);
   return (
-    <h5 style={{}} className={`message text-serif2   ${className}  p-2 fw-bold`}>
+    <h5 style={{}} className={`message text-center text-serif2   ${className}  p-2 fw-bold`}>
       {message}
     </h5>
   );

@@ -57,7 +57,7 @@ function Navbar({
           className="language my-auto fs-5 cursor-pointer"
           data-aos-offset="0"
           data-aos="fade-left"
-          daos-aos-delay="0"
+          daos-aos-delay="800"
           onClick={() => {
             setInSpanish((previous: boolean) => !previous);
           }}
@@ -68,7 +68,7 @@ function Navbar({
           <i
             className="fas fa-moon cursor-pointer theme fs-2"
             data-aos="fade-left"
-            data-aos-delay="400"
+            data-aos-delay="600"
             data-aos-offset="0"
             onClick={() => {
               setTheme("light");
