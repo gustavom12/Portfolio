@@ -90,7 +90,8 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
             <div
               className="english mx-auto flex flex-column"
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-offset="0"
+              data-aos-delay="300"
             >
               {inSpanish ? (
                 <>
@@ -109,21 +110,24 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="550"
+              data-aos-offset="0"
+              data-aos-delay="400"
             >
               ExpressJS
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="650"
+              data-aos-offset="0"
+              data-aos-delay="550"
             >
               Typescript
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="750"
+              data-aos-offset="0"
+              data-aos-delay="700"
             >
               Angular
             </span>
@@ -132,21 +136,24 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="850"
+              data-aos-offset="0"
+              data-aos-delay="700"
             >
               Redux
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="950"
+              data-aos-offset="0"
+              data-aos-delay="850"
             >
               Git & Github
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="1050"
+              data-aos-offset="0"
+              data-aos-delay="850"
             >
               Boostrap
             </span>
@@ -155,21 +162,24 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="1150"
+              data-aos-offset="0"
+              data-aos-delay="1050"
             >
               CSS
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="1250"
+              data-aos-offset="0"
+              data-aos-delay="1150"
             >
               HTML5
             </span>
             <span
               className="tecnology mx-auto d-flex justify-content-around"
               data-aos="fade-up"
-              data-aos-delay="1350"
+              data-aos-offset="0"
+              data-aos-delay="1250"
             >
               Wordpress
             </span>

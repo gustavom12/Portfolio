@@ -1,21 +1,31 @@
 import React from "react";
 function TMDB({ inSpanish }: { inSpanish: boolean }) {
   return (
-    <div className="proyect d-flex" data-aos="fade" >
-      <div className="cardImage mx-auto">
+    <div className="proyect d-flex">
+      <div
+        className="cardImage mx-auto"
+        data-aos="fade-left-mini"
+        data-aos-duration="1100"
+      >
         <img src="https://i.ibb.co/4ZR9rmW/tmdb.png" alt="" />
       </div>
       <div className="text mx-auto">
-        <a
-          href="https://gustavom12.github.io/TMDB/"
-          className="fs-2 text-center text-main fw-bold"
-          target="_blank"
-          rel="noreferrer"
-        >
-          The moviedb simulation site
-        </a>
+        <div data-aos="fade-right-mini" data-aos-duration="1100">
+          <a
+            href="https://gustavom12.github.io/TMDB/"
+            className="fs-2 text-center text-main fw-bold"
+            target="_blank"
+            rel="noreferrer"
+          >
+            The moviedb simulation site
+          </a>
+        </div>
         {inSpanish ? (
-          <h4 className="text-serif mt-2">
+          <h4
+            className="text-serif mt-2"
+            data-aos="fade-right-mini"
+            data-aos-duration="1100"
+          >
             Simulación de "
             <a href="https://www.themoviedb.org/?language=es">
               The Movie Database
@@ -24,21 +34,47 @@ function TMDB({ inSpanish }: { inSpanish: boolean }) {
             framework y la API de "TMDB" en el backend
           </h4>
         ) : (
-          <h4 className="text-serif mt-2">
+          <h4
+            className="text-serif mt-2"
+            data-aos="fade-right-mini"
+            data-aos-duration="1100"
+          >
             Simulation of "
             <a href="https://www.themoviedb.org/?language=es">
               The Movie Database
             </a>
-            ", it is my second practise proyect, using Angular as
-            frontend framework and the API of "TMDB" in the backend
+            ", it is my second practise proyect, using Angular as frontend
+            framework and the API of "TMDB" in the backend
           </h4>
         )}
         <div className="logos mt-3 ">
-        <h6 className="text-main text-serif fw-bold"> {inSpanish ? "Tecnologías:": "Tecnologies"} </h6>
+          <h6
+            className="text-main text-serif fw-bold"
+            data-aos="fade-right-mini"
+            data-aos-duration="1100"
+          >
+            {" "}
+            {inSpanish ? "Tecnologías:" : "Tecnologies"}{" "}
+          </h6>
           <div className="d-flex justify-content-around">
-            <i className="fab fa-angular logo"></i>
-            <i className="fab fa-sass logo"></i>
-            <i className="fab fa-bootstrap logo"></i>
+            <i
+              className="fab fa-angular logo"
+              data-aos="fade-up-mini"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            ></i>
+            <i
+              className="fab fa-sass logo"
+              data-aos="fade-up-mini"
+              data-aos-duration="800"
+              data-aos-delay="500"
+            ></i>
+            <i
+              className="fab fa-bootstrap logo"
+              data-aos="fade-up-mini"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            ></i>
           </div>
         </div>
       </div>

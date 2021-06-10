@@ -15,12 +15,11 @@ function App() {
   useEffect(()=>{
     //delete loader after DOM loaded
     document.getElementById("loader")?.remove()
-
     AOS.init({
       duration: 600, // values from 0 to 3000, with step 50ms
       easing: 'ease-in-out', // default easing for AOS animations
       once: true,
-      offset: 50,
+      offset: 25,
       anchorPlacement: 'bottom-bottom'
     })
   },[])

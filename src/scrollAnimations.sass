@@ -27,3 +27,42 @@
     transform: rotateY( -10deg )
   100%
     transform: perspective(2500px) rotateY(0)
+
+[data-aos="fade-right-mini"]
+  opacity: 0
+  transition-property: transform, opacity
+
+  &.aos-animate
+    opacity: 1
+
+  @media screen and (min-width: 768px)
+    transform: translateX(15px)
+
+    &.aos-animate
+      transform: translateX(0)
+
+[data-aos="fade-left-mini"]
+  opacity: 0
+  transition-property: transform, opacity
+
+  &.aos-animate
+    opacity: 1
+
+  @media screen and (min-width: 768px)
+    transform: translateX(-15px)
+
+    &.aos-animate
+      transform: translateX(0)
+
+[data-aos="fade-up-mini"]
+  opacity: 0
+  transition-property: transform, opacity
+
+  &.aos-animate
+    opacity: 1
+
+  @media screen and (min-width: 768px)
+    transform: translateY(30px)
+
+    &.aos-animate
+      transform: translateX(0)

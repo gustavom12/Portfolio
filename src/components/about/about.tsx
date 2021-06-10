@@ -15,7 +15,7 @@ function About({ inSpanish }: { inSpanish: boolean }) {
           />
         </div>
         {inSpanish ? (
-          <h5 className="text text-serif font" data-aos="fade" data-aos-duration="2100" >
+          <h5 className="text text-serif font" data-aos="fade-right-mini" data-aos-duration="1200" >
             Soy un desarrollador web FullStack, enfocado principalmente en
             <span className="text-main"> Front-End</span>. Actualmente me
             encuentro trabajando de manera freelance pero me gustaría encontrar

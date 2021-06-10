@@ -12,7 +12,7 @@ function Home({ inSpanish }: { inSpanish: boolean }) {
       </h1>
       {inSpanish ? (
         <>
-          <div data-aos="fade">
+          <div data-aos="fade-right-mini" data-aos-duration="1100">
             <h2>
               ¡Hola! mi nombre es{" "}
               <span className="text-primary fw-bold">Gustavo Mercado</span>, soy
