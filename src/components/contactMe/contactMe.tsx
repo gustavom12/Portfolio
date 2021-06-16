@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useWindowOffset from "../../customHooks/useWindowOffset";
-import Message from "../miniComponents/message";
+import Message from "../a_miniComponents/message";
 import AnimatedInput from "./animatedInput/animatedInput";
 import "./contactMe.sass";
 function ContactMe({ inSpanish }: { inSpanish: boolean }) {
