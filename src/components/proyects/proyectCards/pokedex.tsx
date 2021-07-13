@@ -1,4 +1,5 @@
 import React from "react";
+import OnHover from "../onHover";
 function Pokedex({ inSpanish }: { inSpanish: boolean }) {
   return (
     <div className="proyect d-flex">
@@ -8,6 +9,10 @@ function Pokedex({ inSpanish }: { inSpanish: boolean }) {
         data-aos-duration="1100"
       >
         <img src="https://i.ibb.co/TtbdDLv/poke.png" alt="" />
+        <OnHover
+            inSpanish={inSpanish}
+            url="https://gustavom12.github.io/PokedexSimulation/"
+          />
       </div>
       <div className="text mx-auto">
         <div data-aos="fade-right-mini" data-aos-duration="1100">

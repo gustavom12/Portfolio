@@ -8,7 +8,7 @@ function Proyects({ inSpanish }: { inSpanish: boolean }) {
   return (
     <section className="proyects" style={{position:"relative"}} >
       <h3 className="text-serif text-main fw-bold proyectsTitle" data-aos-offset="0"  data-aos="fade-right">
-        {inSpanish ? "Proyectos" : "Proyects"}
+        {inSpanish ? "Proyectos propios" : "My Proyects"}
       </h3>
       <div
         id="Experience"

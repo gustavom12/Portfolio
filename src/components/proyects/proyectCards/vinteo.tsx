@@ -1,5 +1,6 @@
 import React from "react";
 import Carrousel from "../carrouselImgs/carrousel";
+import OnHover from "../onHover"
 function Vinteo({ inSpanish }: { inSpanish: boolean }) {
   return (
     <div className="proyect d-flex" >
@@ -16,7 +17,12 @@ function Vinteo({ inSpanish }: { inSpanish: boolean }) {
             "https://i.ibb.co/chhCynk/vint2.png",
             "https://i.ibb.co/QX5FWpZ/vint4.png",
           ]}
-        />
+        >
+          <OnHover
+            inSpanish={inSpanish}
+            url="https://vinteo.vercel.app/"
+          />
+        </Carrousel>
       </div>
       <div className="text mx-auto">
         <div

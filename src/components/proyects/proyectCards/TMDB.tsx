@@ -1,4 +1,5 @@
 import React from "react";
+import OnHover from "../onHover";
 function TMDB({ inSpanish }: { inSpanish: boolean }) {
   return (
     <div className="proyect d-flex">
@@ -8,6 +9,10 @@ function TMDB({ inSpanish }: { inSpanish: boolean }) {
         data-aos-duration="1100"
       >
         <img src="https://i.ibb.co/4ZR9rmW/tmdb.png" alt="" />
+        <OnHover
+          inSpanish={inSpanish}
+          url="https://gustavom12.github.io/TMDB/"
+        />
       </div>
       <div className="text mx-auto">
         <div data-aos="fade-right-mini" data-aos-duration="1100">

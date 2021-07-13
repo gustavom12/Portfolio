@@ -1,16 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+// import TextHover from "../../a_miniComponents/texthover/texthover";
+import IframeModal from "../../iframeView/iframeModal";
 import Carrousel from "../carrouselImgs/carrousel";
+import OnHover from "../onHover";
 // import VideoPlayer from "../ytVideoPlayer/ytVideoPlayer";
 function Axis({ inSpanish }: { inSpanish: boolean }) {
+  const [IframeModalDiv, setIframeModalDiv] = useState<any>(null)
   return (
     <div className="proyect d-flex">
+      {IframeModalDiv &&
+        <IframeModal
+          screen={IframeModalDiv}
+          removeModal={setIframeModalDiv}
+          url="https://axis-eta.vercel.app"
+        />}
       <div
-        className="cardImage mx-auto"
+        className="cardImage mx-auto flex-column"
         data-aos="fade-left-mini"
         data-aos-duration="1100"
       >
-        {/* <img src="https://i.ibb.co/dB5L3t5/vint.png" alt="" /> */}
-        {/* <VideoPlayer videoId="trkzKwgh3KI"/> */}
+        {/* <div className="icons d-flex justify-content-around w-50 mx-auto">
+          <i
+            className="fas fa-desktop flex textFather iconButton fs-4"
+            onClick={()=>{setIframeModalDiv("hugeScreen")}}
+          >
+            <TextHover
+              message={inSpanish ? "Visualizar en Huge screen" : "Watch in Huge screen"}
+              className="fw-bold text-serif"
+            />
+          </i>
+          <i
+            className="fas fa-mobile-alt flex textFather iconButton fs-4"
+            onClick={()=>{setIframeModalDiv("mobileScreen")}}
+            >
+            <TextHover message={inSpanish ? "Visualizar en Mobile screen" : "Watch in Mobile screen"} />
+          </i>
+        </div> */}
         <Carrousel
           imagesUrls={[
             "https://i.ibb.co/6vBvDzR/ax1.png",
@@ -23,7 +48,13 @@ function Axis({ inSpanish }: { inSpanish: boolean }) {
             "https://i.ibb.co/bdp2vSz/ax6.png",
           ]}
           delay={3000}
-        />
+        >
+          {/* -------- OnHover -------- */}
+          <OnHover
+            inSpanish={inSpanish}
+            url="https://axis-eta.vercel.app"
+          />
+        </Carrousel>
       </div>
       <div className="text mx-auto">
         <div

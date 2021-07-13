@@ -176,12 +176,12 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
               HTML5
             </span>
             <span
-              className="tecnology mx-auto d-flex justify-content-around"
+              className="tecnology long text-center mx-auto d-flex justify-content-around"
               data-aos="fade-up"
               data-aos-offset="0"
               data-aos-delay="1250"
             >
-              Wordpress
+              Testing library
             </span>
           </div>
         </div>

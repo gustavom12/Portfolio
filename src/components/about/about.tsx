@@ -19,10 +19,10 @@ function About({ inSpanish }: { inSpanish: boolean }) {
         {inSpanish ? (
           <h5 className="text text-serif font" data-aos="fade-right-mini" data-aos-duration="1200" >
             Soy un desarrollador web FullStack, enfocado principalmente en
-            <span className="text-main"> Front-End</span>. Actualmente me
-            encuentro trabajando de manera freelance pero me gustaría encontrar
-            un trabajo en relación de dependencia, que me dé más estabilidad y
-            me permita trabajar en equipo.
+            <span className="text-main"> Front-End</span>. He trabajado 4 meses de
+            manera freelance. Actualmente me encuentro trabajando en
+            <a href="http://microweb.link/" target="_blank" rel="noreferrer"> Microweb </a>
+            desde mayo del 2021.
             <div />
             Como desarrollador me gustan los desafios que me hacen salir de mi
             zona de confort, ya que aprendo mucho más con ellos. Una de las
@@ -45,9 +45,9 @@ function About({ inSpanish }: { inSpanish: boolean }) {
           <h5 className="text text-serif font">
             I am a FullStack web developer, mainly focused on{" "}
             <span className="text-main">Front-End</span>.
-            Currently I'm working as a freelancer, but I would like to find a
-            permanent job, that gives me more stability and allows me to work in
-            a team.
+            I worked 4 months as a freelancer. Actually, I'm working at
+            <a href="http://microweb.link/" target="_blank" rel="noreferrer">Microweb </a>
+
             <div />
             As developer, I like challenges that take me out of my comfort zone,
             as I learn much more with them. One of the things I enjoy the most,

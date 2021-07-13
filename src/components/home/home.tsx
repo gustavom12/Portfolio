@@ -17,8 +17,8 @@ function Home({ inSpanish }: { inSpanish: boolean }) {
               ¡Hola! mi nombre es{" "}
               <span className="text-primary fw-bold">Gustavo Mercado</span>, soy
               un desarrollador web Fullstack, enfocado principalmente en el
-              front-end. En búsqueda activa de un trabajo que me ayude a
-              perfeccionar mis conocimientos.
+              front-end. Actualmente trabajando en <a href="http://microweb.link/" target="_blank" rel="noreferrer">Microweb </a>
+              como desarrollador front-end con ReactJS.
               {/* <div className="fadingEffect"></div>j */}
             </h2>
           </div>
@@ -41,9 +41,9 @@ function Home({ inSpanish }: { inSpanish: boolean }) {
           <h2>
             ¡Hello! my name is{" "}
             <span className="text-primary fw-bold">Gustavo Mercado</span>, I am
-            a Fullstack web developer, mainly focused on the front end, looking
-            for a job that could help me to improve my group working and
-            experience.
+            a Fullstack web developer, mainly focused on the front end. Actually,
+            I am working in <a href="http://microweb.link/" target="_blank" rel="noreferrer">Microweb </a>
+            as a front-end developer with ReactJS
           </h2>
           <h4
             className="text-serif2 slide"

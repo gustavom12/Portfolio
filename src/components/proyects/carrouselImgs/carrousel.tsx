@@ -7,7 +7,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-function Carrousel ({imagesUrls, delay}:{imagesUrls:Array<string>,delay?:number}){
+function Carrousel ({imagesUrls, delay, children}:{imagesUrls:Array<string>,delay?:number, children?:any}){
   SwiperCore.use([Autoplay]);
   return(
     <Swiper
@@ -25,6 +25,7 @@ function Carrousel ({imagesUrls, delay}:{imagesUrls:Array<string>,delay?:number}
           <img src={url} key={i} alt="" />
         </SwiperSlide >
       )}
+      {children}
     </Swiper>
   )
 }
