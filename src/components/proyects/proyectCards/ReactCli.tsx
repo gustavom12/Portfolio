@@ -26,23 +26,24 @@ const ReactCli = ({ inSpanish }: { inSpanish: boolean })=>{
           </a>
         </div>
         {inSpanish ? (
-          <h3
+          <h4
             className="text-serif mt-2"
             data-aos="fade-right-mini"
             data-aos-duration="1100"
           >
-            React Cli, generador de componentes, estilos,
-            carpetas, custom hooks y más.
-          </h3>
+            React Cli, cliente de terminal generador de componentes, estilos,
+            carpetas y custom hooks, automatizando la creación de archivos para ahorrar
+            tiempo a la hora de desarrollar aplicaciones.
+          </h4>
         ) : (
-          <h3
+          <h4
             className="text-serif mt-2"
             data-aos="fade-right-mini"
             data-aos-duration="1100"
           >
             React Cli, generator of Components,
-            Styles, folder, custom hooks and more.
-          </h3>
+            Styles, folders and custom hooks, automating the creation of files to save time.
+          </h4>
         )}
         <div className="logos mt-3 ">
           <div className="d-flex justify-content-around">

@@ -18,11 +18,11 @@ function About({ inSpanish }: { inSpanish: boolean }) {
         </div>
         {inSpanish ? (
           <h5 className="text text-serif font" data-aos="fade-right-mini" data-aos-duration="1200" >
-            Soy un desarrollador web FullStack, enfocado principalmente en
-            <span className="text-main"> Front-End</span>. He trabajado 4 meses de
-            manera freelance. Actualmente me encuentro trabajando en
+            He trabajado 3 meses de
+            manera freelance y un més en
             <a href="http://microweb.link/" target="_blank" rel="noreferrer"> Microweb </a>
-            desde mayo del 2021.
+            (Startup de desarrollo de software)
+            como desarrollador web fullstack principalmente utilizando ReactJS.
             <div />
             Como desarrollador me gustan los desafios que me hacen salir de mi
             zona de confort, ya que aprendo mucho más con ellos. Una de las
@@ -43,11 +43,9 @@ function About({ inSpanish }: { inSpanish: boolean }) {
           </h5>
         ) : (
           <h5 className="text text-serif font">
-            I am a FullStack web developer, mainly focused on{" "}
-            <span className="text-main">Front-End</span>.
-            I worked 4 months as a freelancer. Actually, I'm working at
+            I worked 3 months as a freelancer and 1 month  at
             <a href="http://microweb.link/" target="_blank" rel="noreferrer">Microweb </a>
-
+            (Startup of software development) as a fullstack web developer mainly using ReactJS.
             <div />
             As developer, I like challenges that take me out of my comfort zone,
             as I learn much more with them. One of the things I enjoy the most,
