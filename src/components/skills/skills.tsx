@@ -184,6 +184,32 @@ function Skills({ inSpanish }: { inSpanish: boolean }) {
               Testing library
             </span>
           </div>
+          <div className="flex">
+            <span
+              className="tecnology mx-auto d-flex justify-content-around"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-delay="1150"
+            >
+              MySQL
+            </span>
+            <span
+              className="tecnology mx-auto d-flex justify-content-around"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-delay="1250"
+            >
+              TypeORM
+            </span>
+            <span
+              className="tecnology long text-center mx-auto d-flex justify-content-around"
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-delay="1350"
+            >
+              PHP
+            </span>
+          </div>
         </div>
       </div>
     </section>

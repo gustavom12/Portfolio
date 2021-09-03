@@ -22,7 +22,7 @@ function Carrousel ({imagesUrls, delay, children}:{imagesUrls:Array<string>,dela
     >
       {imagesUrls.map((url, i)=>
         <SwiperSlide >
-          <img src={url} key={i} alt="" />
+          <img src={url} loading="lazy" key={i} alt="" />
         </SwiperSlide >
       )}
       {children}

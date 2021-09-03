@@ -1,5 +1,6 @@
 import React from "react";
 import Axis from "./proyectCards/axis";
+import MiCalendario from "./proyectCards/miCalendario";
 import Pokedex from "./proyectCards/pokedex";
 import ReactCli from "./proyectCards/ReactCli";
 import TMDB from "./proyectCards/TMDB";
@@ -16,6 +17,7 @@ function Proyects({ inSpanish }: { inSpanish: boolean }) {
         style={{ visibility: "hidden", height:"20vh", position:"absolute", top:"60vh" }}
       />
       <Axis inSpanish={inSpanish}/>
+      <MiCalendario inSpanish={inSpanish} />
       <ReactCli inSpanish={inSpanish} />
       <Vinteo inSpanish={inSpanish} />
       <TMDB inSpanish={inSpanish} />
